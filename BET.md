@@ -12,4 +12,6 @@ Artifact: `index.html`, `sketch.js`, `style.css`, `README.md`, `PRICE.md`, and `
 
 Verification: DoneMeans ticket `t_8fe0da23bc9a`; receipt is recorded at `/home/vboxuser/projects/donemeans/receipts/t_8fe0da23bc9a.json` and must match the final code SHA below.
 
-GitHub: pending final push.
+GitHub: https://github.com/RNGBubba/chromatic-field-poster-pack
+
+Final verification SHA is recorded in the DoneMeans receipt after this note is committed.
