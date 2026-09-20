@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap');
+:root { --ink:#17212b; --paper:#f5f0e8; --line:#c9c0b3; --accent:#d1495b; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:'Space Grotesk',sans-serif; }
+.shell { max-width:1180px; margin:auto; padding:42px clamp(20px,5vw,76px) 30px; }
+.intro { display:grid; grid-template-columns:1.4fr 1fr; gap:18px 55px; align-items:end; }
+.eyebrow,.hint,footer { font:500 11px 'DM Mono',monospace; letter-spacing:.08em; text-transform:uppercase; }
+.eyebrow { grid-column:1/-1; color:var(--accent); margin:0; }
+h1 { font-size:clamp(42px,8vw,90px); letter-spacing:-.075em; line-height:.88; margin:0; }
+.lede { max-width:390px; line-height:1.55; margin:0 0 5px; }
+.controls { grid-column:1/-1; display:flex; flex-wrap:wrap; gap:12px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:14px 0; align-items:end; }
+label { display:grid; gap:5px; font:11px 'DM Mono',monospace; text-transform:uppercase; }
+select,input,button { border:1px solid var(--ink); background:transparent; padding:10px 12px; font:14px 'DM Mono',monospace; color:var(--ink); }
+button { cursor:pointer; } button:hover { background:var(--ink); color:var(--paper); } button.primary { background:var(--accent); color:white; border-color:var(--accent); }
+.hint { color:#65717a; margin:0; text-transform:none; letter-spacing:0; }
+.canvas-wrap { margin:45px auto 35px; max-width:720px; box-shadow:0 20px 50px #17212b22; }
+.canvas-wrap canvas { display:block; width:100% !important; height:auto !important; }
+footer { display:flex; justify-content:space-between; gap:15px; border-top:1px solid var(--line); padding-top:15px; color:#65717a; }
+a { color:var(--accent); }
+@media (max-width:720px) { .intro { display:block; } .lede { margin:22px 0; } .controls { margin-top:22px; } footer { display:block; } footer a { display:block; margin-top:10px; } }

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chromatic Field — Original Poster Pack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="intro">
+      <p class="eyebrow">ORIGINAL GENERATIVE PRINT STUDY / 001</p>
+      <h1>Chromatic Field</h1>
+      <p class="lede">Four quiet systems for making loud walls. Choose a field, tune its atmosphere, and export a print-ready PNG.</p>
+      <div class="controls" aria-label="Poster controls">
+        <label for="modeSelect">Field
+          <select id="modeSelect">
+            <option value="lattice">Lattice Bloom</option>
+            <option value="orchard">Signal Orchard</option>
+            <option value="glyph">Tidal Glyph</option>
+            <option value="geometry">Night Geometry</option>
+          </select>
+        </label>
+        <label for="seedInput">Seed
+          <input id="seedInput" type="number" min="1" max="999999" value="1427">
+        </label>
+        <button id="rerollButton" type="button">Reroll</button>
+        <button id="saveButton" type="button" class="primary">Export 18×24 PNG</button>
+      </div>
+      <p class="hint">Tip: each seed is deterministic. Save a favorite seed in your notes before exporting.</p>
+    </section>
+    <section class="canvas-wrap" aria-label="Generative poster preview">
+      <div id="canvas-holder"></div>
+    </section>
+    <footer>
+      <span>Made from code, color, and measured chance.</span>
+      <a href="PRICE.md">Print pack + pricing</a>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js" integrity="sha384-mNoDMsj3qyJxOkfse1kNjhDVbbYTNnpuSEL68aRVPnNERG3lHoGH+4FHEQSHJhYV" crossorigin="anonymous"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
